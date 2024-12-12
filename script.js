@@ -1,4 +1,4 @@
-// add
+// basic functions
 
 function add(a,b){
     return a + b;
@@ -21,4 +21,24 @@ function multiply(a, b)
 
 function divide(a, b){
     return a/b;
+}
+
+function operate (func, a, b)
+{
+    if (func === "add")
+    {
+        return add(a, b);
+    } else if (func === "subtract")
+    {
+        return subtract(a, b);
+    } else if (func === "multiply")
+    {
+        return multiply(a, b);
+    }else if (func === "divide")
+    {
+        return divide(a, b);
+    } else
+    {
+        return console.log("ERROR");
+    }
 }
