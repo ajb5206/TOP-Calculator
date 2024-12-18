@@ -10,8 +10,19 @@
 
 #calcBody {
     display: flex;
+    flex-direction: column;
     height: 50vh;
     width: 25vw;
     border: 5px solid black;
     background-color: salmon;
+}
+
+#calcDisplay {
+    border: 5px solid black;
+    background-color: gray;
+    flex: 1;
+}
+
+.btnRow {
+    flex: 1;
 }
