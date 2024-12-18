@@ -7,6 +7,10 @@ const sevenBtn = document.querySelector("#seven");
 const eightBtn = document.querySelector("#eight");
 const nineBtn = document.querySelector("#nine");
 const mulitplicationBtn = document.querySelector("#multiplicationBtn");
+const fourBtn = document.querySelector("#four");
+const fiveBtn = document.querySelector("#five");
+const sixBtn = document.querySelector("#six");
+const subtractBtn = document.querySelector("subtractionBtn")
 
 
 
