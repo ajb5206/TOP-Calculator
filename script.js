@@ -24,8 +24,9 @@ const equalBtn = document.querySelector("equalBtn");
 // number buttons 
 oneBtn.addEventListener('click', () => {
     display.textContent += "1";
-    let numTotal = display.textContent;
-    return +numTotal;
+    let numTotal = +(display.textContent);
+    //console.log(numTotal);
+    return numTotal;
 })
 
 
