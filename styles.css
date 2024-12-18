@@ -31,3 +31,7 @@
 .regButton {
     flex: 1;
 }
+
+.dblButton {
+    flex: 2;
+}
