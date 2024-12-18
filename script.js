@@ -11,7 +11,7 @@ const mulitplicationBtn = document.querySelector("#multiplicationBtn");
 const fourBtn = document.querySelector("#four");
 const fiveBtn = document.querySelector("#five");
 const sixBtn = document.querySelector("#six");
-const subtractBtn = document.querySelector("subtractionBtn");
+const subtractionBtn = document.querySelector("subtractionBtn");
 const oneBtn = document.querySelector("#one");
 const twoBtn = document.querySelector("#two");
 const threeBtn = document.querySelector("#three");
@@ -21,7 +21,11 @@ const decimalBtn = document.querySelector("decimal");
 const equalBtn = document.querySelector("equalBtn");
 
 //clear btn
-
+clearBtn.addEventListener("click", ()=>{
+    display.textContent = "";
+    numTotal = 0;
+    return numTotal;
+})
 
 // number buttons 
 oneBtn.addEventListener('click', () => {
@@ -85,6 +89,24 @@ nineBtn.addEventListener('click', () => {
     let numTotal = +(display.textContent);
     console.log(numTotal);
     return numTotal;
+})
+
+// operators
+
+mulitplicationBtn.addEventListener('click', () => {
+    return "multiply"
+})
+
+subtractionBtn.addEventListener('click', () => {
+    return "subtract";
+})
+
+divisionBtn.addEventListener('click', () => {
+    return "divide"
+})
+
+additionBtn.addEventListener('click', () => {
+    return "add"
 })
 
 // basic functions
