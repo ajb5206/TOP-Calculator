@@ -1,4 +1,5 @@
 // Query Selectors
+const display = document.querySelector("#calcDisplay");
 const clearBtn = document.querySelector("#clearBtn");
 const signBtn = document.querySelector("#signChangeBtn");
 const percentBtn = document.querySelector("#percentageBtn");
