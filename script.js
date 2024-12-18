@@ -21,10 +21,12 @@ const decimalBtn = document.querySelector("decimal");
 const equalBtn = document.querySelector("equalBtn");
 
 
-
-
-
-
+// number buttons 
+oneBtn.addEventListener('click', () => {
+    display.textContent += "1";
+    let numTotal = display.textContent;
+    return +numTotal;
+})
 
 
 // basic functions
