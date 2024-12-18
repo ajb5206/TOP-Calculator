@@ -24,5 +24,10 @@
 }
 
 .btnRow {
+    display: flex;
+    flex: 1;
+}
+
+.regButton {
     flex: 1;
 }
