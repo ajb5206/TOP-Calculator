@@ -20,6 +20,8 @@ const zeroBtn = document.querySelector("#zero");
 const decimalBtn = document.querySelector("decimal");
 const equalBtn = document.querySelector("equalBtn");
 
+//clear btn
+
 
 // number buttons 
 oneBtn.addEventListener('click', () => {
@@ -29,6 +31,61 @@ oneBtn.addEventListener('click', () => {
     return numTotal;
 })
 
+twoBtn.addEventListener('click', () => {
+    display.textContent += "2";
+    let numTotal = +(display.textContent);
+    //console.log(numTotal);
+    return numTotal;
+})
+
+threeBtn.addEventListener('click', () => {
+    display.textContent += "3";
+    let numTotal = +(display.textContent);
+    //console.log(numTotal);
+    return numTotal;
+})
+
+fourBtn.addEventListener('click', () => {
+    display.textContent += "4";
+    let numTotal = +(display.textContent);
+    //console.log(numTotal);
+    return numTotal;
+})
+
+fiveBtn.addEventListener('click', () => {
+    display.textContent += "5";
+    let numTotal = +(display.textContent);
+    //console.log(numTotal);
+    return numTotal;
+})
+
+sixBtn.addEventListener('click', () => {
+    display.textContent += "6";
+    let numTotal = +(display.textContent);
+    //console.log(numTotal);
+    return numTotal;
+})
+
+sevenBtn.addEventListener('click', () => {
+    display.textContent += "7";
+    let numTotal = +(display.textContent);
+    //console.log(numTotal);
+    return numTotal;
+})
+
+eightBtn.addEventListener('click', () => {
+    display.textContent += "8";
+    let numTotal = +(display.textContent);
+    //console.log(numTotal);
+    return numTotal;
+})
+
+nineBtn.addEventListener('click', () => {
+    display.textContent += "9";
+    let numTotal = +(display.textContent);
+    console.log(numTotal);
+    return numTotal;
+})
 
 // basic functions
 
