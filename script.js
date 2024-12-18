@@ -1,3 +1,16 @@
+// Query Selectors
+const clearBtn = document.querySelector("#clearBtn");
+const signBtn = document.querySelector("#signChangeBtn");
+const percentBtn = document.querySelector("#percentageBtn");
+const divisionBtn = document.querySelector("#divisionBtn");
+
+
+
+
+
+
+
+
 // basic functions
 
 function add(a,b){
