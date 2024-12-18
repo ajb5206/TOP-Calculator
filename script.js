@@ -3,7 +3,10 @@ const clearBtn = document.querySelector("#clearBtn");
 const signBtn = document.querySelector("#signChangeBtn");
 const percentBtn = document.querySelector("#percentageBtn");
 const divisionBtn = document.querySelector("#divisionBtn");
-
+const sevenBtn = document.querySelector("#seven");
+const eightBtn = document.querySelector("#eight");
+const nineBtn = document.querySelector("#nine");
+const mulitplicationBtn = document.querySelector("#multiplicationBtn");
 
 
 
