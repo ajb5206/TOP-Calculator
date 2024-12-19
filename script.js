@@ -39,6 +39,21 @@ percentBtn.addEventListener("click", () => {
     return numTotal;
 })
 
+signBtn.addEventListener("click", () => {
+    numTotal = numTotal * (-1);
+    display.textContent = numTotal;
+    return numTotal;
+})
+
+document.addEventListener("keydown", (e) => {
+    let numArr = numTotal.toString().split('');
+    if(e.key === "Backspace")
+    {
+       numArr.pop();
+       numTotal = +(numArr.join(''));
+       display.textContent = numTotal;
+    }
+})
 
 
 // number buttons 
