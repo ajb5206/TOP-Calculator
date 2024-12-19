@@ -28,10 +28,16 @@ let firstNum;
 clearBtn.addEventListener("click", ()=>{
     display.textContent = "";
     numTotal = 0;
-    return numTotal;
+    operatorChoice = "";
 })
 
 // number buttons 
+
+zeroBtn.addEventListener('click', ()=> {
+    display.textContent += "0";
+    numTotal = +(display.textContent);
+    return numTotal
+})
 oneBtn.addEventListener('click', () => {
     display.textContent += "1";
     numTotal = +(display.textContent);
@@ -134,28 +140,39 @@ equalBtn.addEventListener('click', (str, num) => {
 
 // BASIC FUNCTIONS
 
-function add(a,b){
-    return a + b;
+function add(a, b){
+    sum = a + b;
+    numTotal = sum;
+    return sum;
 }
 
 // subtraction
 
 function subtract(a, b){
-    return a - b;
+    sum = a - b;
+    numTotal = sum;
+    return sum;
 }
 
 // multiply
 
 function multiply(a, b)
 {
-    console.log(a* b);
-    return a * b;
+    sum = a * b;
+    numTotal = sum
+    return sum;
 }
 
 // divide
 
 function divide(a, b){
-    return a/b;
+    if(b===0)
+    {
+        return "NO WAY JOSE!";
+    }
+    sum = a/b;
+    numTotal = sum;
+    return sum;
 }
 
 function operate (func, a, b)
