@@ -208,7 +208,7 @@ function multiply(a, b)
 function divide(a, b){
     if(b === 0)
     {
-        return "NO WAY JOSE!";
+        return "Maybe Infinity?";
     }
     sum = a / b;
     numTotal = sum;
