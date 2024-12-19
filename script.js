@@ -162,18 +162,18 @@ function operate (func, a, b)
 {
     if (func === "add")
     {
-        return add(a, b);
+        display.textContent = add(a, b);
     } else if (func === "subtract")
     {
-        return subtract(a, b);
+        display.textContent = subtract(a, b);
     } else if (func === "multiply")
     {
-        return multiply(a, b);
+        display.textContent = multiply(a, b);
     }else if (func === "divide")
     {
         return divide(a, b);
     } else
     {
-        return console.log("ERROR");
+        display.textContent = "ERROR";
     }
 }
