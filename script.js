@@ -17,8 +17,9 @@ const twoBtn = document.querySelector("#two");
 const threeBtn = document.querySelector("#three");
 const additionBtn = document.querySelector("#additionBtn");
 const zeroBtn = document.querySelector("#zero");
-const decimalBtn = document.querySelector("decimal");
-const equalBtn = document.querySelector("equalBtn");
+const decimalBtn = document.querySelector("#decimal");
+const equalBtn = document.querySelector("#equalBtn");
+
 
 //clear btn
 clearBtn.addEventListener("click", ()=>{
@@ -30,7 +31,7 @@ clearBtn.addEventListener("click", ()=>{
 // number buttons 
 oneBtn.addEventListener('click', () => {
     display.textContent += "1";
-    let numTotal = +(display.textContent);
+    numTotal = +(display.textContent);
     //console.log(numTotal);
     return numTotal;
 })
@@ -87,7 +88,6 @@ eightBtn.addEventListener('click', () => {
 nineBtn.addEventListener('click', () => {
     display.textContent += "9";
     let numTotal = +(display.textContent);
-    console.log(numTotal);
     return numTotal;
 })
 
@@ -109,7 +109,11 @@ additionBtn.addEventListener('click', () => {
     return "add"
 })
 
-// basic functions
+equalBtn.addEventListener('click', (str, num) => {
+    return;
+})
+
+// BASIC FUNCTIONS
 
 function add(a,b){
     return a + b;
