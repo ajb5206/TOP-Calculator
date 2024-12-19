@@ -31,6 +31,16 @@ clearBtn.addEventListener("click", ()=>{
     operatorChoice = "";
 })
 
+//other buttons
+
+percentBtn.addEventListener("click", () => {
+    numTotal = numTotal / 100;
+    display.textContent = numTotal;
+    return numTotal;
+})
+
+
+
 // number buttons 
 
 
