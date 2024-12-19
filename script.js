@@ -33,6 +33,21 @@ clearBtn.addEventListener("click", ()=>{
 
 // number buttons 
 
+
+decimalBtn.addEventListener("click", () => {
+    let currentDis = display.textContent;
+    currentDis.split('');
+    if(currentDis.includes('.'))
+    {
+        display.textContent += '';
+    }else
+    {
+        display.textContent += '.';
+    }
+    numTotal = +(display.textContent);
+    return numTotal;
+})
+
 zeroBtn.addEventListener('click', ()=> {
     display.textContent += "0";
     numTotal = +(display.textContent);
