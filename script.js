@@ -134,7 +134,7 @@ additionBtn.addEventListener('click', () => {
     return "add"
 })
 
-equalBtn.addEventListener('click', (str, num) => {
+equalBtn.addEventListener('click', () => {
     operate(operatorChoice, firstNum, numTotal);
 })
 
@@ -166,29 +166,29 @@ function multiply(a, b)
 // divide
 
 function divide(a, b){
-    if(b===0)
+    if(b === 0)
     {
         return "NO WAY JOSE!";
     }
-    sum = a/b;
+    sum = a / b;
     numTotal = sum;
     return sum;
 }
 
-function operate (func, a, b)
+function operate (func)
 {
     if (func === "add")
     {
-        display.textContent = add(a, b);
+        display.textContent = add(firstNum, numTotal);
     } else if (func === "subtract")
     {
-        display.textContent = subtract(a, b);
+        display.textContent = subtract(firstNum, numTotal);
     } else if (func === "multiply")
     {
-        display.textContent = multiply(a, b);
+        display.textContent = multiply(firstNum, numTotal);
     }else if (func === "divide")
     {
-        return divide(a, b);
+        display.textContent = divide(firstNum, numTotal);
     } else
     {
         display.textContent = "ERROR";
