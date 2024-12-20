@@ -24,10 +24,13 @@ let numTotal = 0;
 let operatorChoice;
 let firstNum;
 
+let numArr = [];
+
 //clear btn
 clearBtn.addEventListener("click", ()=>{
     display.textContent = "";
     numTotal = 0;
+    // numArr = [];
     operatorChoice = "";
 })
 
@@ -76,68 +79,50 @@ decimalBtn.addEventListener("click", () => {
 zeroBtn.addEventListener('click', ()=> {
     display.textContent += "0";
     numTotal = +(display.textContent);
-    return numTotal
 })
 oneBtn.addEventListener('click', () => {
     display.textContent += "1";
     numTotal = +(display.textContent);
-    //console.log(numTotal);
-    return numTotal;
 })
 
 twoBtn.addEventListener('click', () => {
     display.textContent += "2";
     numTotal = +(display.textContent);
-    //console.log(numTotal);
-    return numTotal;
 })
 
 threeBtn.addEventListener('click', () => {
     display.textContent += "3";
     numTotal = +(display.textContent);
-    //console.log(numTotal);
-    return numTotal;
 })
 
 fourBtn.addEventListener('click', () => {
     display.textContent += "4";
     numTotal = +(display.textContent);
-    //console.log(numTotal);
-    return numTotal;
 })
 
 fiveBtn.addEventListener('click', () => {
     display.textContent += "5";
     numTotal = +(display.textContent);
-    //console.log(numTotal);
-    return numTotal;
 })
 
 sixBtn.addEventListener('click', () => {
     display.textContent += "6";
     numTotal = +(display.textContent);
-    //console.log(numTotal);
-    return numTotal;
 })
 
 sevenBtn.addEventListener('click', () => {
     display.textContent += "7";
     numTotal = +(display.textContent);
-    //console.log(numTotal);
-    return numTotal;
 })
 
 eightBtn.addEventListener('click', () => {
     display.textContent += "8";
     numTotal = +(display.textContent);
-    //console.log(numTotal);
-    return numTotal;
 })
 
 nineBtn.addEventListener('click', () => {
     display.textContent += "9";
     numTotal = +(display.textContent);
-    return numTotal;
 })
 
 // operators
@@ -147,7 +132,6 @@ mulitplicationBtn.addEventListener('click', () => {
     display.textContent = "";
     numTotal = 0
     operatorChoice = "multiply";
-    return "multiply"
 })
 
 subtractionBtn.addEventListener('click', () => {
@@ -155,7 +139,6 @@ subtractionBtn.addEventListener('click', () => {
     display.textContent = "";
     numTotal = 0;
     operatorChoice = "subtract";
-    return "subtract";
 })
 
 divisionBtn.addEventListener('click', () => {
@@ -163,7 +146,6 @@ divisionBtn.addEventListener('click', () => {
     display.textContent = "";
     numTotal = 0;
     operatorChoice = "divide";
-    return "divide"
 })
 
 additionBtn.addEventListener('click', () => {
@@ -171,7 +153,6 @@ additionBtn.addEventListener('click', () => {
     display.textContent = "";
     numTotal = 0;
     operatorChoice = "add";
-    return "add"
 })
 
 equalBtn.addEventListener('click', () => {
