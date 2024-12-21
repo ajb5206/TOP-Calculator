@@ -48,9 +48,18 @@ percentBtn.addEventListener("click", () => {
 })
 
 signBtn.addEventListener("click", () => {
-    numTotal = numTotal * (-1);
-    display.textContent = numTotal;
-    return numTotal;
+    if(+(display.textContent > 0) || +(display.textContent < 0))
+    {
+        if(+(display.textContent) === firstNum)
+            {
+                firstNum = firstNum * -1;
+                display.textContent = firstNum;
+            }else
+            {
+                numTotal = numTotal * -1;
+                display.textContent = numTotal;
+            }
+    }
 })
 
 document.addEventListener("keydown", (e) => {
