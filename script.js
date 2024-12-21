@@ -24,7 +24,6 @@ let numTotal = 0;
 let operatorChoice;
 let firstNum;
 
-let numArr = [];
 
 //clear btn
 clearBtn.addEventListener("click", ()=>{
@@ -156,7 +155,7 @@ additionBtn.addEventListener('click', () => {
 })
 
 equalBtn.addEventListener('click', () => {
-    operate(operatorChoice, firstNum, numTotal);
+    operate(operatorChoice);
 })
 
 // BASIC FUNCTIONS
@@ -201,15 +200,19 @@ function operate (func)
     if (func === "add")
     {
         display.textContent = add(firstNum, numTotal);
+        operatorChoice = "";
     } else if (func === "subtract")
     {
         display.textContent = subtract(firstNum, numTotal);
+        operatorChoice = "";
     } else if (func === "multiply")
     {
         display.textContent = multiply(firstNum, numTotal);
+        operatorChoice = "";
     }else if (func === "divide")
     {
         display.textContent = divide(firstNum, numTotal);
+        operatorChoice = "";
     } else
     {
         display.textContent = "ERROR";
