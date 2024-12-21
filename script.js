@@ -29,7 +29,7 @@ let firstNum;
 clearBtn.addEventListener("click", ()=>{
     display.textContent = "";
     numTotal = 0;
-    // numArr = [];
+    firstNum = 0;
     operatorChoice = "";
 })
 
@@ -148,10 +148,15 @@ divisionBtn.addEventListener('click', () => {
 })
 
 additionBtn.addEventListener('click', () => {
-    firstNum = numTotal;
-    display.textContent = "";
-    numTotal = 0;
     operatorChoice = "add";
+    if(firstNum && numTotal)
+    {
+        operate("add")
+    }else{
+        firstNum = numTotal;
+        numTotal = 0;
+        display.textContent = "";
+    }
 })
 
 equalBtn.addEventListener('click', () => {
@@ -195,11 +200,13 @@ function divide(a, b){
     return sum;
 }
 
-function operate (func)
+function operate(func)
 {
     if (func === "add")
     {
         display.textContent = add(firstNum, numTotal);
+        numTotal = +(display.textContent);
+        firstNum = 0;
         operatorChoice = "";
     } else if (func === "subtract")
     {
