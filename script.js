@@ -22,7 +22,7 @@ const equalBtn = document.querySelector("#equalBtn");
 
 let numTotal = 0;
 let operatorChoice;
-let firstNum;
+let firstNum = 0;
 
 
 //clear btn
@@ -120,31 +120,57 @@ eightBtn.addEventListener('click', () => {
 })
 
 nineBtn.addEventListener('click', () => {
+    if(firstNum === 0)
+    {
+        display.textContent = "";
+    }
+    
     display.textContent += "9";
-    numTotal = +(display.textContent);
+    firstNum = +(display.textContent);
 })
 
 // operators
 
 mulitplicationBtn.addEventListener('click', () => {
-    firstNum = numTotal;
-    display.textContent = "";
-    numTotal = 0
     operatorChoice = "multiply";
+    if(firstNum && numTotal)
+    {
+        operate("multiply")
+    }else{
+        //firstNum = numTotal;
+        numTotal = firstNum;
+        //numTotal = 0;
+        firstNum = 0;
+        display.textContent = "";
+    }
 })
 
 subtractionBtn.addEventListener('click', () => {
-    firstNum = numTotal;
-    display.textContent = "";
-    numTotal = 0;
     operatorChoice = "subtract";
+    if(firstNum && numTotal)
+    {
+        operate("subtract")
+    }else{
+        //firstNum = numTotal;
+        numTotal = firstNum;
+        //numTotal = 0;
+        firstNum = 0;
+        display.textContent = "";
+    }
 })
 
 divisionBtn.addEventListener('click', () => {
-    firstNum = numTotal;
-    display.textContent = "";
-    numTotal = 0;
     operatorChoice = "divide";
+    if(firstNum && numTotal)
+    {
+        operate("divide")
+    }else{
+        //firstNum = numTotal;
+        numTotal = firstNum;
+        //numTotal = 0;
+        firstNum = 0;
+        display.textContent = "";
+    }
 })
 
 additionBtn.addEventListener('click', () => {
@@ -153,8 +179,10 @@ additionBtn.addEventListener('click', () => {
     {
         operate("add")
     }else{
-        firstNum = numTotal;
-        numTotal = 0;
+        //firstNum = numTotal;
+        numTotal = firstNum;
+        //numTotal = 0;
+        firstNum = 0;
         display.textContent = "";
     }
 })
