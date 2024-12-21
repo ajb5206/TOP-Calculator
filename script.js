@@ -36,9 +36,15 @@ clearBtn.addEventListener("click", ()=>{
 //other buttons
 
 percentBtn.addEventListener("click", () => {
-    numTotal = numTotal / 100;
-    display.textContent = numTotal;
-    return numTotal;
+    if(+(display.textContent) === firstNum)
+    {
+        firstNum = firstNum / 100;
+        display.textContent = firstNum;
+    }else
+    {
+        numTotal = numTotal / 100;
+        display.textContent = numTotal;
+    }
 })
 
 signBtn.addEventListener("click", () => {
