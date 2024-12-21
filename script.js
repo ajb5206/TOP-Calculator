@@ -288,7 +288,6 @@ function operate(func)
         numTotal = +(display.textContent);
         firstNum = 0;
         operatorChoice = "";
-        console.log(firstNum, numTotal)
     } else if (func === "subtract")
     {
         display.textContent = subtract(numTotal, firstNum);
