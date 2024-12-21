@@ -175,7 +175,10 @@ mulitplicationBtn.addEventListener('click', () => {
     if(firstNum && numTotal)
     {
         operate(operatorChoice)
-    }else{
+    }else if(numTotal)
+        {
+            operatorChoice = "multiply";
+        }else{
         operatorChoice = "multiply";
         numTotal = firstNum;
         firstNum = 0;
@@ -189,7 +192,10 @@ subtractionBtn.addEventListener('click', () => {
     if(firstNum && numTotal)
     {
         operate(operatorChoice)
-    }else{
+    }else if(numTotal)
+        {
+            operatorChoice = "subtract";
+        }else{
         operatorChoice = "subtract";
         numTotal = firstNum;
         firstNum = 0;
@@ -203,7 +209,10 @@ divisionBtn.addEventListener('click', () => {
     if(firstNum && numTotal)
     {
         operate(operatorChoice)
-    }else{
+    }else if(numTotal)
+        {
+            operatorChoice = "divide";
+        }else{
         operatorChoice = "divide";
         numTotal = firstNum;
         firstNum = 0;
@@ -217,7 +226,11 @@ additionBtn.addEventListener('click', () => {
     if(firstNum && numTotal)
     {
         operate(operatorChoice)
-    }else{
+    }else if(numTotal)
+    {
+        operatorChoice = "add";
+    }
+    else{
         operatorChoice = "add";
         numTotal = firstNum;
         firstNum = 0;
@@ -275,6 +288,7 @@ function operate(func)
         numTotal = +(display.textContent);
         firstNum = 0;
         operatorChoice = "";
+        console.log(firstNum, numTotal)
     } else if (func === "subtract")
     {
         display.textContent = subtract(numTotal, firstNum);
