@@ -95,13 +95,18 @@ zeroBtn.addEventListener('click', ()=> {
     firstNum = +(display.textContent);
 })
 oneBtn.addEventListener('click', () => {
-    if(firstNum === 0)
-        {
-            display.textContent = "";
-        }
-        
-        display.textContent += "1";
-        firstNum = +(display.textContent);
+    let currentDis = display.textContent;
+    currentDis.split('');
+
+    if(currentDis.includes('.') || firstNum !== 0)
+    {
+        display.textContent += '1';
+    } else if (firstNum === 0)
+    {
+        display.textContent = '';
+    }
+
+    firstNum = +(display.textContent);
 })
 
 twoBtn.addEventListener('click', () => {
@@ -292,7 +297,7 @@ function divide(a, b){
     }
     sum = a / b;
     numTotal = sum;
-    return sum;
+    return sum.toFixed(10); // fix digit length...
 }
 
 function operate(func)
