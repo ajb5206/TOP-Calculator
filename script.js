@@ -98,15 +98,15 @@ oneBtn.addEventListener('click', () => {
     let currentDis = display.textContent;
     currentDis.split('');
 
-    if(currentDis.includes('.') || firstNum !== 0)
-    {
-        display.textContent += '1';
-    } else if (firstNum === 0)
-    {
-        display.textContent = '';
-    }
+        if(currentDis.includes('.') || firstNum !== 0)
+        {
+            display.textContent += '1';
+        } else if (firstNum === 0)
+        {
+            display.textContent = '';
+        }
 
-    firstNum = +(display.textContent);
+        firstNum = +(display.textContent);
 })
 
 twoBtn.addEventListener('click', () => {
