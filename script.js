@@ -95,17 +95,12 @@ zeroBtn.addEventListener('click', ()=> {
     firstNum = +(display.textContent);
 })
 oneBtn.addEventListener('click', () => {
-    let currentDis = display.textContent;
-    currentDis.split('');
-
-        if(currentDis.includes('.') || firstNum !== 0)
+    if(firstNum === 0)
         {
-            display.textContent += '1';
-        } else if (firstNum === 0)
-        {
-            display.textContent = '';
+            display.textContent = "";
         }
-
+        
+        display.textContent += "1";
         firstNum = +(display.textContent);
 })
 
